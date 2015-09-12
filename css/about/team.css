@@ -1,0 +1,290 @@
+/****************************************************
+FONTS 
+****************************************************/
+
+@font-face {
+	font-family: 'Toucon';
+	src: url('../../fonts/Toucon__.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Geo Sans';
+	src: url('../../fonts/GeosansLight.ttf') format('truetype');
+}
+
+/***********
+CLEARFIX
+***********/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/****************
+INTITIALIZE
+*******************/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url('../../images/backgrounds/forest2.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+/*****************************************************************************************************************************
+HEADER/NAV
+*******************************************************************************************************************************/
+/*=======================================
+HEADER/NAV LAYOUT
+========================================*/
+header {
+	position: fixed;
+	top: 0;
+	height: 105px;
+	min-width: 100%;
+	z-index: 1;
+}
+
+header img {
+	float: left;
+	height: 100%;
+}
+.navWrapper {
+	float: right;
+	padding-top: 30px;
+	margin-right: 20px;
+
+}
+nav li {
+	display: inline-block;
+	padding-left: 20px;
+	position: relative;
+}
+nav ul ul {
+	position: absolute;
+	margin-top: 5px;
+	display: none;
+}
+
+nav ul ul li {
+	width: 150px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul ul li {
+	text-align: center;
+	line-height: 30px;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+
+.spacer{
+	margin-top: 105px;
+}
+/*======================================================================
+HEADER/NAV STYLING
+===========================================================================*/
+header {
+	font-family: Toucon;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #A4E666;
+	font-size: 24px;
+}
+
+.level1:hover {
+	border-bottom: medium solid #31B96E;
+	transition: 0.3s ease;
+	
+}
+
+nav ul ul li {
+	background-color: #31B96E;
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
+
+nav ul ul li a{
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+}
+
+.normal {
+
+}
+.scrolled{
+	border-bottom: thin solid #31B96E;
+	background-color: rgba(255,255,255, 0.95);
+	transition: background-color 150ms linear;
+
+
+}
+
+.scrolled nav ul ul li {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
+.scrolled a {
+	color: #5C7B00;	
+
+}
+
+
+nav ul li a{
+	font-size: 24px;
+	text-decoration: none;
+	color: #A4E666;
+}
+
+nav ul li a:hover {
+	border-bottom: medium solid #31B96E;
+	transition: 0.3s ease;
+	
+}
+/*****************************************************************************************************************************
+TEAM
+*******************************************************************************************************************************/
+
+/*========================================================================
+TEAM LAYOUT
+===========================================================================*/
+.teamText{
+    background-size: cover;
+	height: 500px;
+}
+.teamText h1 {
+	text-align: center;
+}
+
+.teamText hr {
+	width: 80%;
+	height: 5px;
+	border-radius: 2px;
+	background-color: #84CB04;
+	margin-left: 10%;
+}
+.teamText p {
+	padding-top: 20px;
+	width: 80%;
+	margin: 0 auto;
+	font-family: Geo Sans;
+}
+
+.meet {
+	height: 100px;
+	width: 100%;
+}
+
+.meet h1 {
+	line-height: 100px;
+	text-align: center;
+}
+
+#teamCenter {
+	margin-left: 10%;
+}
+.teamCard {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	margin: 15px;
+}
+
+.teamPic {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+.overlay p {
+	text-align: center;
+	font-family: Geo Sans;
+}
+
+.overlay hr {
+	width: 80%;
+	margin-left: 10%;
+	height: 4px;
+	border-radius: 4px;
+	background-color: white;
+}
+.teamName {
+	margin-top: 10px;
+}
+.teamTitle {
+	margin-top: 20px;
+}
+.teamBlurb {
+	margin-top: 40px;
+}
+/*=========================================================================
+TEAM STYLING
+===========================================================================*/
+
+.teamText h1 {
+	font-size: 3em;
+	color: #FFFF44;
+
+}
+
+.teamText p {
+	font-size: 2em;
+	line-height: 150%;
+	color: #FFFF44;
+
+}
+#teamWrapper {
+	background: url('../../images/backgrounds/forest1.jpg');
+	background-size: cover;
+}
+.meet {
+	background-color: #84CB04;
+}
+.meet h1 a{
+	color: #FFFF44;
+	font-size: 1.75em;
+	text-decoration: none;
+}
+
+.meet h1 a:hover {
+	color:#DDF377;
+}
+
+
+.teamCard {
+	border-radius: 10px;
+	background-color: rgb(192,255,0);
+	color: white;
+}
+
+.overlay {
+	background-color: rgba(175,0,255,0.5);
+	border-radius: 10px;
+	color: white;
+	font-size: 1.75em;
+}
+

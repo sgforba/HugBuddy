@@ -1,0 +1,297 @@
+/****************************************************
+FONTS 
+****************************************************/
+
+@font-face {
+	font-family: 'Toucon';
+	src: url('../fonts/Toucon__.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Geo Sans';
+	src: url('../fonts/GeosansLight.ttf') format('truetype');
+}
+
+/***********
+CLEARFIX
+***********/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/****************
+INTITIALIZE
+*******************/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*****************************************************************************************************************************
+HEADER/NAV
+*******************************************************************************************************************************/
+/*=======================================
+HEADER/NAV LAYOUT
+========================================*/
+header {
+	position: fixed;
+	top: 0;
+	height: 105px;
+	min-width: 100%;
+	z-index: 1;
+}
+
+header img {
+	float: left;
+	height: 125%;
+}
+.navWrapper {
+	float: right;
+	padding-top: 30px;
+	margin-right: 20px;
+
+}
+nav li {
+	display: inline-block;
+	padding-left: 20px;
+	position: relative;
+}
+nav ul ul {
+	position: absolute;
+	margin-top: 5px;
+	display: none;
+}
+
+nav ul ul li {
+	width: 150px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul ul li {
+	text-align: center;
+	line-height: 30px;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+
+.spacer{
+	margin-top: 105px;
+}
+/*======================================================================
+HEADER/NAV STYLING
+===========================================================================*/
+header {
+	font-family: Toucon;
+	background-color: rgba(255,255,255, 0.95);
+}
+nav ul li a{
+	text-decoration: none;
+	color: #A4E666;
+	font-size: 24px;
+}
+
+.level1:hover {
+	border-bottom: medium solid #31B96E;
+	transition: 0.3s ease;
+	
+}
+
+nav ul ul li {
+	background-color: #31B96E;
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
+
+nav ul ul li a{
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+}
+
+.normal {
+
+
+}
+.scrolled{
+	border-bottom: thin solid #31B96E;
+	background-color: rgba(255,255,255, 0.95);
+	transition: background-color 150ms linear;
+
+
+}
+
+.scrolled nav ul ul li {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
+.scrolled a {
+	color: #5C7B00;	
+
+}
+
+
+nav ul li a{
+	font-size: 24px;
+	text-decoration: none;
+	color: #A4E666;
+}
+
+nav ul li a:hover {
+	border-bottom: medium solid #31B96E;
+	transition: 0.3s ease;
+	
+}
+
+
+
+/******************************************************************************************************************************************
+MAIN CONTENT
+*******************************************************************************************************************************************/
+
+
+video {
+	position: fixed;
+	top: 0;
+	right: 0px; 
+	height: 768x;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: -1;
+
+}
+
+.faded {
+	clear: both;
+	padding-top:200px;
+	text-align: center;
+
+}
+
+.findButton{
+	display: block;
+	box-sizing: border-box;
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 50px;
+	height: 75px;
+	padding-top: 10px;
+}
+
+
+/*=======================================================================
+MAIN CONTENT STYLING
+=======================================================================*/
+.faded{
+
+	font-style: italic;
+	font-size: 125px;
+	color: white;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+.faded p {
+	font-family: Geo Sans;
+}
+.findButton{
+	font-size: 1.75em;
+	border: 5px solid #84CB04;
+	border-radius: 4px;
+}
+
+.findButton:hover {
+	border: 5px solid white;
+	background-color: #5C7B00;
+	color: white;
+
+}
+.findButton a{
+	font-weight: bold;
+	font-family: Geo Sans;
+	text-decoration: none;
+	color: #FFFF44;
+	text-shadow: -1px 0 #5C7B00, 0 1px #5C7B00, 1px 0 #5C7B00, 0 -1px #5C7B00;
+}
+
+.findButton{
+	text-align: center;
+}
+.findButton:hover{
+	text-decoration: none;
+	color: white;
+	font-weight: bolder;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+
+
+/******************************************************************************************************************************************
+FOOTER
+*******************************************************************************************************************************************/
+
+/*======================================================================
+FOOTER LAYOUT
+===========================================================================*/
+footer {
+	height: 30px;
+}
+
+/*======================================================================
+FOOTEr STYLING
+===========================================================================*/
+
+footer {
+	
+}
+
+
+/*****************************************************************************************************************************
+MOBILE LAYOUT
+*******************************************************************************************************************************/
+@media screen and (max-width: 768px){
+	video {
+		display: none;
+	}
+	#regNav {
+		display: none;
+	}
+	#dropNav {
+		display: inline-block;
+	}
+
+	.top{
+		background-color: grey;
+	}
+
+	.faded{
+		font-size: 30px;
+	}
+
+	.findButton {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background-color: #A4E666;
+		text-align: center;
+
+	}
+
+	.findButton a{
+		font-weight: bolder;
+		color: white;
+	}
+
+}
+
+

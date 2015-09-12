@@ -1,0 +1,215 @@
+/***********
+CLEARFIX
+***********/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/****************
+INTITIALIZE
+*******************/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url('../../images/backgrounds/forest1.jpg');
+	background-size: cover;
+}
+
+/*****************************************************************************************************************************
+HEADER/NAV
+*******************************************************************************************************************************/
+/*=======================================
+HEADER/NAV LAYOUT
+========================================*/
+header {
+	position: fixed;
+	top: 0;
+	height: 105px;
+	min-width: 100%;
+	z-index: 1;
+}
+
+header img {
+	float: left;
+	height: 100%;
+}
+.navWrapper {
+	float: right;
+	padding-top: 20px;
+	margin-right: 20px;
+
+}
+nav li {
+	display: inline-block;
+	padding-left: 20px;
+	position: relative;
+}
+nav ul ul {
+	position: absolute;
+	margin-top: 5px;
+	display: none;
+}
+
+nav ul ul li {
+	width: 150px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul ul li {
+	text-align: center;
+	line-height: 30px;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+
+.spacer{
+	margin-top: 105px;
+}
+/*======================================================================
+HEADER/NAV STYLING
+===========================================================================*/
+
+nav ul li a{
+	font-size: 24px;
+	text-decoration: none;
+	color: #A4E666;
+}
+
+.level1:hover {
+	border-bottom: medium solid #31B96E;
+	transition: 0.3s ease;
+	
+}
+
+nav ul ul li {
+	background-color: #31B96E;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+nav ul ul li a{
+	font-size: 1.10em;
+	color: white;
+	font-weight: bolder;
+}
+.normal {
+}
+.scrolled{
+	border-bottom: thin solid #31B96E;
+	background-color: rgba(255,255,255, 0.95);
+	transition: background-color 150ms linear;
+
+}
+
+.scrolled a {
+	color: #5C7B00;	
+}
+
+
+
+/*****************************************************************************************************************************
+BLURB
+*******************************************************************************************************************************/
+/*===============================================================
+BLURB LAYOUT
+=================================================================*/
+
+/*.blurb {
+	width: 100%;
+	height: 200px;
+}*/
+/*===============================================================
+BLURB STYLING
+=================================================================*/
+/*.blurb {
+	background-color: black;
+}
+*/
+
+/*****************************************************************************************************************************
+RETAIL
+*******************************************************************************************************************************/
+/*===============================================================
+RETAIL LAYOUT
+=================================================================*/
+.retailWrapper {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.card {
+	width: 400px;
+	height: 400px;
+	margin: 20px;
+	float: left;
+}
+.picWrapper img{
+	height: 100%;
+	width: 100%;
+	
+}
+.picWrapper {
+	height: 97%;
+	width: 95%;
+	margin-left: 2.5%;
+	margin-top: 1.5%;
+	position: relative;	
+}
+.topOverlay{
+	position: absolute;
+	height: 20%;
+	width: 100%;
+	background-color: rgba(0,0,255,0.4);
+}
+.topOverlay h2{
+	text-align: center;
+	line-height: 70px;
+}
+.bottomOverlay{
+	position: absolute;
+	height: 30%;
+	width: 100%;
+	top: 70%;
+	background-color: rgba(0,255,0,0.4);
+}
+.topOverlay h2{
+	text-align: center;
+	line-height: 70px;
+}
+/*===============================================================
+RETAIL STYLING
+=================================================================*/
+
+.card {
+	background-color: #B8D420;
+	border-radius: 5px;
+}
+
+.picWrapper {
+	box-shadow: 3px 3px 3px;
+	border-radius: 3px;
+}
+
+.topOverlay{
+	background-color: rgba(0,0,255,0.4);
+	font-size: 1.75em;
+	color: white;
+	bottom-border-radius-left: 20px;
+}
+
+.bottomOverlay p {
+	line-height: 120px;
+	font-size: 2em;
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+}

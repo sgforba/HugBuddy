@@ -1,0 +1,236 @@
+
+/*****************************************************************************************************************************************
+INITIAL
+******************************************************************************************************************************************/
+
+*{
+	margin:0;
+	padding: 0;
+}
+/****************************************************
+FONTS 
+****************************************************/
+/*@font-face {
+	font-family: 'GoodDog';
+	src: url('../../fonts/GoodDog.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'HappyFox';
+	src: url('../../fonts/HappyFox-Condensed.otf') format('opentype');
+}*/
+@font-face {
+	font-family: 'Toucon';
+	src: url('../fonts/Toucon__.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Geo Sans';
+	src: url('../fonts/GeosansLight.ttf') format('truetype');
+}
+/***********
+CLEARFIX
+***********/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/****************************************************************************************************************************************
+BACKGROUND 
+******************************************************************************************************************************************/
+body{
+	background: url("../images/backgrounds/group1.jpg") no-repeat center center fixed;
+	background-size: cover;
+
+}
+
+/*****************************************************************************************************************************
+HEADER/NAV
+*******************************************************************************************************************************/
+/*=======================================
+HEADER/NAV LAYOUT
+========================================*/
+header {
+	position: fixed;
+	top: 0;
+	height: 105px;
+	min-width: 100%;
+	z-index: 1;
+}
+
+header img {
+	float: left;
+	height: 100%;
+}
+.navWrapper {
+	float: right;
+	padding-top: 30px;
+	margin-right: 20px;
+
+}
+nav li {
+	display: inline-block;
+	padding-left: 20px;
+	position: relative;
+}
+nav ul ul {
+	position: absolute;
+	margin-top: 5px;
+	display: none;
+}
+
+nav ul ul li {
+	width: 150px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul ul li {
+	text-align: center;
+	line-height: 30px;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+
+.spacer{
+	margin-top: 105px;
+}
+/*======================================================================
+HEADER/NAV STYLING
+===========================================================================*/
+header {
+	font-family: Toucon;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #A4E666;
+	font-size: 24px;
+}
+
+.level1:hover {
+	border-bottom: medium solid #31B96E;
+	transition: 0.3s ease;
+	
+}
+
+nav ul ul li {
+	background-color: #31B96E;
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
+
+nav ul ul li a{
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+}
+
+.normal {
+}
+.scrolled{
+	border-bottom: thin solid #31B96E;
+	background-color: rgba(255,255,255, 0.95);
+	transition: background-color 150ms linear;
+
+
+}
+
+.scrolled nav ul ul li {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
+.scrolled a {
+	color: #5C7B00;	
+
+}
+
+
+/*****************************************************************************************************************************************
+FORM
+******************************************************************************************************************************************/
+
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+FORM LAYOUT
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+*/
+.formWrapper{
+	width: 90%;
+	height: 500px;
+	position: relative;
+	top: 75px;
+	left: 5%;
+
+}
+.formWrapper input {
+	display: block;
+}
+.left-side {
+	float: left;
+	width: 30%;
+}
+.right-side {
+	float: right;
+	width: 60%;
+}
+
+.right-side textarea {
+	width: 95%;
+	height: 400px;
+	margin-right: 5%;
+}
+.left-side{
+	margin-left: 10px;
+}
+.left-side:first-child {
+	margin-top: 25px;
+}
+.right-side:first-child {
+	margin-top: 50px;
+}
+
+.inputSection {
+	margin-bottom: 25px;
+}
+.left-side input {
+	width: 80%;
+}
+
+input [type=text]{
+	height: 30px;
+}
+select {
+	margin-top: 25px;
+	display: block;
+}
+input [type=submit]{
+	color: green;
+}
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+FORM STYLING
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+*/
+label {
+	font-family: Geo Sans;
+}
+.formWrapper {
+	border:1px solid black;
+	background-color: rgba(92,123,0,0.8);
+}
+
+label {
+	color: white;
+}
+
+.left-side {
+	font-size: 1.5em;
+}
+
+.right-side {
+	font-size: 1.5em;
+}
